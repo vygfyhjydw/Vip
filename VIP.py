@@ -19,7 +19,7 @@ db = client['TEST']
 users_collection = db['VIP']
 redeem_codes_collection = db['redeem_codes0']
 
-TELEGRAM_BOT_TOKEN = '7649404779:AAFJE_9ZiSG4C8mMtI2SWIsT_XZCrjci_0o'
+TELEGRAM_BOT_TOKEN = '7501498072:AAGY9V0qzE3dM-uaC2XdZQQHzBBxfYmgTws'
 ADMIN_USER_ID = 6237152221  
 
 cooldown_dict = {}
