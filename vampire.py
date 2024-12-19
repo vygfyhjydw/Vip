@@ -59,7 +59,7 @@ async def start(update: Update, context: CallbackContext):
         return
     message = (
        "*🔥Welcome to the battlefield 🔥*\n\n"
-        "*Use /attack <ip> <port> <duration>"
+        "*Use /attack <ip> <port> <duration>*\n"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
