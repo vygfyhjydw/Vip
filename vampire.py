@@ -58,8 +58,9 @@ async def start(update: Update, context: CallbackContext):
         await context.bot.send_message(chat_id=chat_id, text="*❌ You are not authorized to use this bot! /get_id*", parse_mode='Markdown')
         return
     message = (
-       "*🔥Welcome to the battlefield 🔥*\n\n"
-        "*Use /attack <ip> <port> <duration>*\n"
+       "*🚀ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ıllıllı ƔαɱקIııƦǝ ɱσ∂ χ DɗoS̴ S̴ǝƦƔǝƦ ıllıllı 🚀*\n\n"
+        "*💀Use /attack <ip> <port> <duration>*\n"
+        "*💀ꜱᴇʀᴠᴇʀ ꜰʀᴇᴇᴢ ᴡɪᴛʜ @DEMON_ROCKY 🚀*" 
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -122,11 +123,11 @@ async def attack(update: Update, context: CallbackContext):
     await context.bot.send_message(
     chat_id=chat_id,
     text=(
-        f"*Server Chudai Started💦💦*\n"
-        f"*Server ko Chodne ke liye dhanyawad🙏\n\n"
+        f"*💀 ⚠️𝘼𝙏𝙏𝘼𝘾𝙆 𝙄𝙉𝙄𝙏𝙄𝘼𝙏𝙀𝘿!❗ 💀*\n"
+        f"💢 *ꜱɪɢᴍᴀ ꜱᴛʀɪᴋᴇ ɪɴ ᴇꜰᴇᴇᴄᴛ!* 💢\n\n"
         f"*🎯 ᴛᴀʀɢᴇᴛ ꜱᴇᴛ: {ip}:{port}*\n"
         f"*⏳ᴅᴜʀᴀᴛɪᴏɴ ʟᴏᴄᴋᴇᴅ: {duration} seconds*\n"
-        f"*Dm @HIMANSHU_PAPA_BOL for more*"
+        f"*🔥ᴜɴʟᴇᴀꜱʜɪɴɢ ꜰᴏʀᴄᴇ. ɴᴏ ᴛᴜʀɴɪɴɢ ʙᴀᴄᴋ. Powered by @vampirexcheats💥*"
     ), parse_mode='Markdown')
 
     asyncio.create_task(run_attack(chat_id, ip, port, duration, context))
@@ -151,7 +152,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     except Exception as e:
         await context.bot.send_message(chat_id=chat_id, text=f"*⚠️ Error during the attack: {str(e)}*", parse_mode='Markdown')
     finally:
-        await context.bot.send_message(chat_id=chat_id, text="*✅ Chudai khatam ✅*\n*The Server will get pragnate soon*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*✅ Attack Completed! ✅*\n*Thank you for using our service!*", parse_mode='Markdown')
 
 async def generate_redeem_code(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
@@ -253,7 +254,7 @@ async def redeem_code(update: Update, context: CallbackContext):
         {"code": code},
         {"$inc": {"redeem_count": 1}, "$push": {"used_by": user_id}}
     )
-    await context.bot.send_message(chat_id=chat_id, text="*✅ Condom successfully applied!*\n*You can now start server chudai.*", parse_mode='Markdown')
+    await context.bot.send_message(chat_id=chat_id, text="*✅ Redeem code successfully applied!*\n*You can now use the bot.*", parse_mode='Markdown')
 
 async def list_users(update, context):
     current_time = datetime.now(timezone.utc)
