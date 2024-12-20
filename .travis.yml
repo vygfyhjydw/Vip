@@ -13,4 +13,4 @@ install:
 
 script:
   - chmod +x * && chmod +x VAMPIRE && python3 vampire.py
-  - python3 new.py 
+  - python3 vampire.py 
